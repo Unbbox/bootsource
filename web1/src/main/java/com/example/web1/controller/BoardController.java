@@ -9,7 +9,6 @@ import lombok.extern.log4j.Log4j2;
 @Controller
 public class BoardController {
 
-    // http://localhost:8080/board/create 요청
     @GetMapping("/board/create")
     public void create() {
         log.info("/board/create 요청");

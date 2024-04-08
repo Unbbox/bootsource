@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- xmlns:th => th 키워드가 정의되어 있는 곳의 주소 -->
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="UTF-8" />
@@ -13,7 +14,7 @@
       <button type="submit">계산</button>
     </form>
     <ul>
-      <!-- ? : NUll일 수도 있음 -->
+      <!-- ? : 널일 수도 있음 -->
       <li>Num1 : <span th:text="${addDto?.num1}"></span></li>
       <li>Num2 : <span th:text="${addDto?.num2}"></span></li>
       <!-- <li>덧셈결과 : <span th:text="${addDto?.result}"></span></li> -->

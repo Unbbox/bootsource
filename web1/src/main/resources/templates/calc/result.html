@@ -3,23 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>사칙연산</title>
+    <title>Document</title>
   </head>
   <body>
-    <h1>연산 결과</h1>
+    <h3>연산결과</h3>
     <div>
       <span th:text="${addDto.num1}"></span>
-      <label for=""><span th:text="${op}"></span></label>
-      <span th:text="${addDto.num2}"></span>
-      <label for="">=</label>
-      <label for=""><span th:text="${addDto.result}"></span></label>
-    </div>
-    <div>
-      <input type="text" size="5" th:value="${addDto.num1}" />
       <span th:text="${op}"></span>
-      <input type="text" size="5" th:value="${addDto.num2}" />
+      <span th:text="${addDto.num2}"></span>
       =
-      <input type="text" size="5" th:value="${addDto.result}" />
+      <span th:text="${addDto.result}"></span>
+    </div>
+
+    <div>
+      <input type="text" name="" id="" size="5" th:value="${addDto.num1}" />
+      <span th:text="${op}"></span>
+      <input type="text" name="" id="" size="5" th:value="${addDto.num2}" />
+      =
+      <input type="text" name="" id="" size="5" th:value="${addDto.result}" />
     </div>
   </body>
 </html>
